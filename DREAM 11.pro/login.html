@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <style>body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #f39600;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid #d35555;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  small {
+    color: #ab4a4a;
+  }
+  
+  input[type="submit"] {
+    background-color: #ee9e00;
+    color: rgb(172, 99, 99);
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #618f48;
+  }
+  
+  input[type="submit"]:active {
+    background-color: #4305ed;
+  }</style>
+  
+  <center>
+<h1> Display a Telephone Input Field</h1>
+
+<form action="/action_page.php">
+  <label for="phone">Enter a phone number:</label><br><br>
+  <input type="tel" id="phone" name="phone" placeholder="1234956878" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+  
+  <input type="submit">
+  
+
+</form>
+</center>
+</body>
+</html>

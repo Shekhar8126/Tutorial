@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Cricket</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        body{
+            background-image: url("https://tse3.mm.bing.net/th?id=OIP.P8PxOEFHqkIJek1aFXiyIAHaEK&pid=Api&P=0&h=180");
+            background-size: 100% 100%;
+        }
+        .team-selection p {
+            margin-bottom: 10px;
+        }
+        
+        #team-selection-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        
+        #team-selection-form label{
+            margin: 10px;
+        }
+        #team-selection-form select{
+            margin: 10px;
+
+
+        }
+        #team-selection-form input[type="submit"] {
+            margin-bottom: 10px;
+            background-color: #e65858;
+        }
+        
+       
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        
+        thead th {
+            background-color: #310303;
+            text-align: left;
+            padding: 8px;
+        }
+        
+        tbody td {
+            padding: 8px;
+            border-bottom: 1px solid #230303;
+        }
+        
+        tbody tr:last-child td {
+            border-bottom: none;
+        }</style>
+    <header>
+        <center>
+        <h1>Fantasy Cricket</h1>
+    </center>
+    </header>
+    <main>
+        <section class="team-selection">
+            <h2>Team Selection</h2>
+            <p>Select your fantasy cricket team by picking players from the list below:</p>
+            <form id="team-selection-form">
+
+                <label for="player1">Team India</label>
+                <select id="player1" name="player1">
+                    <option value="1">Rohit Sharma</option>
+                    <option value="2">Shubman Gill</option>
+                    <option value="3">virat kholi</option>
+                    <option value="4">KL Rahul</option>
+                    <option value="5">Risahb Pant</option>
+                    <option value="6">Hardik Pandiya</option>
+                    <option value="7">Jadja</option>
+                    <option value="8">Mohit Sharma</option>
+                    <option value="9">Shardul Thakur</option>
+                    <option value="10">Mohm.Siraj</option>
+                    <option value="11">Kuldeep Yadav</option>
+              
+                </select>
+
+                <label for="player2">Team Australia:</label>
+                <select id="player2" name="player2">
+                    <option value="1">Ashton Agar</option>
+                    <option value="2">Alex Carey</option>
+                    <option value="3">Pat Cummins</option>
+                    <option value="4">Aaron Fonch</option>
+                    <option value="5">Cameron Green</option>
+                    <option value="6">Josh Hazlewood</option>
+                    <option value="7">Marnus Labuschagne</option>
+                    <option value="8">Nathan Lyon</option>
+                    <option value="9">Glenn Maxwell</option>
+                    <option value="10">Tim Paine</option>
+                    <option value="11">Steve Smith</option>
+
+                </select>
+
+            
+                <input type="submit" value="Submit Team">
+            </form>
+        </section>
+
+        <section class="leaderboard">
+            <h2>Leaderboard</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Player Name</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                    <tr>
+                        <td>1</td>
+                        <td>Player A</td>
+                        <td>1000</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Player B</td>
+                        <td>850</td>
+                    </tr>
+            
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Fantasy Cricket</p>
+    </footer>
+</body>
+</html>
